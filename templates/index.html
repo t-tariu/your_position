@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나는 친구들 사이에서 어떤 포지션일까?</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-brand">친구 포지션 테스트</div>
+            <div class="nav-links">
+                <a href="#" id="nav-start">테스트 시작</a>
+                <a href="#" id="nav-intro">소개</a>
+                <div id="dark-mode-toggle-icons">
+                    <span id="sun-icon" class="mode-icon">☀️</span>
+                    <span id="moon-icon" class="mode-icon hidden">🌙</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="intro-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2>테스트 소개</h2>
+            <p>이 테스트는 간단한 질문을 통해 당신이 친구들 사이에서 어떤 역할을 하는지 알아보기 위해 만들어졌습니다. 재미로 즐겨주세요!</p>
+            <button id="close-modal-btn">닫기</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="start-screen">
+            <h1>나는 친구들 사이에서 어떤 포지션일까?</h1>
+            <p>간단한 테스트를 통해 알아보세요!</p>
+            <button id="start-btn">시작하기</button>
+            <h5>⌛약 3분 소요 ㅣ 🧑‍🤝‍🧑8가지 포지션</h5>
+            <footer>
+                <p><a href="#" id="contact-link">Contact Us</a><span id="contact-email" class="hidden">: tk012115@gmail.com</span> | <a href="#" id="faq-link">FAQ</a></p>
+            </footer>
+        </div>
+
+        <div id="gender-selection-screen" class="hidden">
+            <h2>성별을 선택해주세요.</h2>
+            <div class="gender-options">
+                <button id="male-btn">👨남자</button>
+                <button id="female-btn">👩여자</button>
+            </div>
+        </div>
+
+        <div id="question-screen" class="hidden">
+            <h2 id="question-text"></h2>
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Answer buttons will be inserted here by JavaScript -->
+            </div>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <img id="result-image" src="" alt="Result Character" class="result-character-image hidden">
+            <h2 id="result-title"></h2>
+            <p id="result-description"></p>
+            <div id="result-percentages"></div>
+            <button id="restart-btn">다시하기</button>
+            <div class="share-buttons">
+                <button id="share-facebook-btn">페이스북 공유</button>
+                <button id="share-instagram-btn">인스타그램 공유</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            <p><strong>Q: 테스트 결과는 정확한가요?</strong></p>
+            <p>A: 이 테스트는 재미를 위해 만들어졌으며, 과학적인 근거나 정확성을 보장하지 않습니다.</p>
+            <p><strong>Q: 개인정보가 저장되나요?</strong></p>
+            <p>A: 아니요, 이 테스트는 어떠한 개인정보도 수집하거나 저장하지 않습니다.</p>
+            <button id="close-faq-modal-btn">닫기</button>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
